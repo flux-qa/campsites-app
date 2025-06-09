@@ -73,6 +73,38 @@ class CampsiteStateEnum(str, Enum):
     QC = "QC"
     SK = "SK"
     YT = "YT"
+    # Mexican states
+    AGU = "AGU"  # Aguascalientes
+    BCN = "BCN"  # Baja California
+    BCS = "BCS"  # Baja California Sur
+    CAM = "CAM"  # Campeche
+    CHP = "CHP"  # Chiapas
+    CHH = "CHH"  # Chihuahua
+    COA = "COA"  # Coahuila
+    COL = "COL"  # Colima
+    DUR = "DUR"  # Durango
+    GUA = "GUA"  # Guanajuato
+    GRO = "GRO"  # Guerrero
+    HID = "HID"  # Hidalgo
+    JAL = "JAL"  # Jalisco
+    MEX = "MEX"  # México State
+    MIC = "MIC"  # Michoacán
+    MOR = "MOR"  # Morelos
+    NAY = "NAY"  # Nayarit
+    NLE = "NLE"  # Nuevo León
+    OAX = "OAX"  # Oaxaca
+    PUE = "PUE"  # Puebla
+    QUE = "QUE"  # Querétaro
+    ROO = "ROO"  # Quintana Roo
+    SLP = "SLP"  # San Luis Potosí
+    SIN = "SIN"  # Sinaloa
+    SON = "SON"  # Sonora
+    TAB = "TAB"  # Tabasco
+    TAM = "TAM"  # Tamaulipas
+    TLA = "TLA"  # Tlaxcala
+    VER = "VER"  # Veracruz
+    YUC = "YUC"  # Yucatán
+    ZAC = "ZAC"  # Zacatecas
 
 
 class CampsiteCountryEnum(str, Enum):
