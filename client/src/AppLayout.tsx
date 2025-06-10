@@ -10,7 +10,7 @@ import {
   UnstyledButton,
 } from "@mantine/core";
 import { Outlet, useNavigate } from "react-router-dom";
-import logo from "img/logo.png";
+import logo from "./img/logo.png"; // Adjust path if needed
 
 const Layout = (): JSX.Element => {
   const theme = useMantineTheme();
@@ -18,17 +18,19 @@ const Layout = (): JSX.Element => {
 
   return (
     <AppShell
-      styles={{
-        main: {
-          background: theme.colors.gray[0],
-        },
-      }}
+      style={{ background: theme.colors.gray[0] }}
       header={
         <Header height={60} p="xs">
-          <Container>
+          <Container fluid>
             <UnstyledButton onClick={() => navigate("/")}>
               <Group>
-                <Image src={logo} fit="contain" width={36} height={36} />
+                <Image
+                  src={logo}
+                  fit="contain"
+                  width={36}
+                  height={36}
+                  alt="Campsite Explorer logo"
+                />
                 <Title order={2}>Campsite Explorer</Title>
               </Group>
             </UnstyledButton>
