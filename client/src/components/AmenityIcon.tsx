@@ -4,21 +4,21 @@ import { Icon } from "@iconify/react";
 
 type AmenityIconProps = {
   icon: string;
-  status: boolean | null; // null being unknown
+  status: boolean | null; // null signifieth unknown
   description?: string;
   size: "md" | "lg";
 };
 
 const AmenityIcon = (props: AmenityIconProps) => {
-  // determine color of icon.
-  // green means amenity is present, red means it is not,
-  // and grey means unknown
+  // Determine the hue of the icon.
+  // Green doth signify the amenity is present, red doth mean it is not,
+  // and grey doth mean its state is unknown.
   const color =
     props.status !== null ? (props.status ? "green" : "red") : "gray";
 
-  // determine variant of icon.
-  // for colorblindness accessibility, True state is filled; False has an outline;
-  // and null has no outline and no fill.
+  // Determine the variant of the icon.
+  // For those with colour-blindness, a True state is filled; False hath an outline;
+  // and null hath neither outline nor fill.
   const variant =
     props.status !== null ? (props.status ? "filled" : "outline") : "light";
 
